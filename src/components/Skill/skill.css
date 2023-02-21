@@ -1,0 +1,26 @@
+.Skills__SkillsCards.show {
+    animation: slide-in-bottom 1s both;
+}
+
+.show {
+    transition: transform 2s;
+}
+
+.Skills__SkillsCards {
+    border-radius: 15px;
+    background: var(--skill-bg);
+    box-shadow: var(--skill-shadow);
+    backdrop-filter: blur(10px);
+    border: var(--skill-border);
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(1000px);
+        opacity: 0;
+      }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+}

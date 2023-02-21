@@ -1,0 +1,12 @@
+.education {
+    border-radius: 15px;
+    background: var(--skill-bg);
+    box-shadow: var(--skill-shadow);
+    border: var(--skill-border);
+    padding-left: 2rem;
+    padding: 2rem;
+}
+
+.education__time {
+    border-left: 1px solid rgb(217 119 6);
+}

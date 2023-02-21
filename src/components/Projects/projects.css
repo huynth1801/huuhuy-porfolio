@@ -1,0 +1,31 @@
+.recent__project-card {
+    border-radius: 15px;
+    background: var(--recent-project-bg);
+    box-shadow: var(--skill-shadow);
+    border: var(--skill-border);
+    /* padding-left: 2rem; */
+    padding: 2rem;
+}
+
+.btn__link {
+    border-radius: 0.5rem;
+    border: 1px solid #b7b4b4;
+}
+
+.hover {
+    --s: 0.1em;   /* the thickness of the line */
+    --c: #1095c1; /* the color */
+    
+    color: #0000;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.5s;
+}
+
+.hover:hover {
+    --_p: 100%
+}
