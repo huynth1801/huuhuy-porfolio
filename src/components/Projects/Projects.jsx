@@ -5,144 +5,171 @@ import "./projects.css";
 
 const Projects = () => {
   return (
-    <section
-      id="projects"
-      className="my-auto bg-gradient-to-b from-[#F7D0E6] to-white"
-    >
+    <section id="projects" className="bg-gradient-to-b from-[#F7D0E6] to-white">
       <div>
         <div className="text-5xl text-blue-500 font-bold text-center">
           <span>MY PROJECTS</span>
         </div>
         {/* projects */}
-        <div className="my-12 mx-4">
+        <div className="my-12 mx-4 grid grid-cols-1 gap-10 z-10">
           {/* food */}
           <div
-            className="recent__project-card
+            className="recent__project-card project__slide-up my-4
             flex 
             flex-col 
             text-center 
             items-center 
             justify-center
             duration-300
-            my-12"
+            cursor-pointer
+            hover:bg-fuchsia-100
+            hover:scale-105
+            md:grid
+            md:grid-cols-2
+            md:gap-10
+            md:mx-38
+            lg:mx-28
+            "
           >
             <img
               src={food}
               alt="Food order website"
-              className="w-full rounded-t-lg"
+              className="rounded-lg w-full md:h-[22rem]"
             />
-            <div className="px-5 pt-6">
-              <div className="text-xl font-semibold">Grab food</div>
-              <div className="text-zinc-500 pt-4">
-                A simple demo landing page website, i did this project to study
-                TailwindCSS and responsive layout.
+            <div className="flex flex-col justify-between">
+              <div className="px-5 pt-6 md:text-left">
+                <div className="text-xl font-semibold">Grab food</div>
+                <div className="text-zinc-500 pt-4">
+                  A simple demo landing page website, i did this project to
+                  study TailwindCSS and responsive layout.
+                </div>
               </div>
-            </div>
-            <div className="flex flex-row justify-center items-center mt-8">
-              <a
-                href="https://github.com/huynth1801/landing-page-tailwind"
-                target="_blank"
-                className="btn__link py-2 px-4 mx-4"
-              >
-                <button className="text-sm text-slate-600 hover">
-                  View source
-                </button>
-              </a>
-              <a
-                href="https://comforting-daifuku-846607.netlify.app/"
-                target="_blank"
-                className="btn__link py-2 px-4"
-              >
-                <button className="text-sm text-slate-600 hover">
-                  Visit website
-                </button>
-              </a>
+              <div className="flex flex-row justify-center items-center mt-8 md:justify-start">
+                <a
+                  href="https://github.com/huynth1801/landing-page-tailwind"
+                  target="_blank"
+                  className="btn__link py-2 px-4 mx-4"
+                >
+                  <button className="text-sm text-slate-600 hover">
+                    View source
+                  </button>
+                </a>
+                <a
+                  href="https://comforting-daifuku-846607.netlify.app/"
+                  target="_blank"
+                  className="btn__link py-2 px-4"
+                >
+                  <button className="text-sm text-slate-600 hover">
+                    Visit website
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
           {/* Nike */}
           <div
-            className="recent__project-card
+            className="recent__project-card my-4
             flex 
             flex-col 
             text-center 
             items-center 
             justify-center
             duration-300
-            my-12"
+            cursor-pointer
+            hover:bg-fuchsia-100
+            hover:scale-105
+            md:grid
+            md:grid-cols-2
+            md:gap-10
+            md:mx-38
+            lg:mx-28
+            "
           >
             <img
               src={nike}
               alt="Nike clone website"
-              className="w-full rounded-t-lg"
+              className="w-full rounded-t-lg md:h-[22rem]"
             />
-            <div className="px-5 pt-6">
-              <div className="text-xl font-semibold">Nike</div>
-              <div className="text-zinc-500 pt-4">
-                Nike clone website, not responsive yet.
+            <div className="flex flex-col justify-between">
+              <div className="px-5 pt-6 md:text-left">
+                <div className="text-xl font-semibold">Nike</div>
+                <div className="text-zinc-500 pt-4">
+                  Nike clone website, not responsive yet.
+                </div>
               </div>
-            </div>
-            <div className="flex flex-row justify-center items-center mt-8">
-              <a
-                href="https://github.com/huynth1801/NikeWebsite"
-                target="_blank"
-                className="btn__link py-2 px-4 mx-4"
-              >
-                <button className="text-sm text-slate-600 hover">
-                  View source
-                </button>
-              </a>
-              <a
-                href="https://huynth1801.github.io/NikeWebsite/"
-                target="_blank"
-                className="btn__link py-2 px-4"
-              >
-                <button className="text-sm text-slate-600 hover">
-                  Visit website
-                </button>
-              </a>
+              <div className="flex flex-row justify-center items-center mt-8 md:justify-start">
+                <a
+                  href="https://github.com/huynth1801/NikeWebsite"
+                  target="_blank"
+                  className="btn__link py-2 px-4 mx-4"
+                >
+                  <button className="text-sm text-slate-600 hover">
+                    View source
+                  </button>
+                </a>
+                <a
+                  href="https://huynth1801.github.io/NikeWebsite/"
+                  target="_blank"
+                  className="btn__link py-2 px-4"
+                >
+                  <button className="text-sm text-slate-600 hover">
+                    Visit website
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
           {/* The band */}
           <div
-            className="recent__project-card
+            className="recent__project-card my-4
             flex 
             flex-col 
             text-center 
             items-center 
-            justify-between
+            justify-center
             duration-300
+            cursor-pointer
+            hover:bg-fuchsia-100
+            hover:scale-105
+            md:grid
+            md:grid-cols-2
+            md:gap-10
+            md:mx-38
+            lg:mx-28
             "
           >
             <img
               src={theband}
               alt="Food order website"
-              className="w-full rounded-t-lg"
+              className="w-full rounded-t-lg md:h-[22rem]"
             />
-            <div className="px-5 pt-3">
-              <div className="text-xl font-semibold">The band</div>
-              <div className="text-zinc-500 pt-4">
-                A website when i studied how to build website with HTML, CSS.
+            <div className="flex flex-col justify-between">
+              <div className="px-5 pt-3 md:text-left">
+                <div className="text-xl font-semibold">The band</div>
+                <div className="text-zinc-500 pt-4">
+                  A website when i studied how to build website with HTML, CSS.
+                </div>
               </div>
-            </div>
-            <div className="flex flex-row items-center justify-center mt-8">
-              <a
-                href="https://github.com/huynth1801/theband"
-                target="_blank"
-                className="btn__link py-2 px-4 mx-4"
-              >
-                <button className="text-sm text-slate-600 hover">
-                  View source
-                </button>
-              </a>
-              <a
-                href="https://huynth1801.github.io/theband/"
-                target="_blank"
-                className="btn__link py-2 px-4"
-              >
-                <button className="text-sm text-slate-600 hover">
-                  Visit website
-                </button>
-              </a>
+              <div className="flex flex-row items-center justify-center mt-8 md:justify-start">
+                <a
+                  href="https://github.com/huynth1801/theband"
+                  target="_blank"
+                  className="btn__link py-2 px-4 mx-4"
+                >
+                  <button className="text-sm text-slate-600 hover">
+                    View source
+                  </button>
+                </a>
+                <a
+                  href="https://huynth1801.github.io/theband/"
+                  target="_blank"
+                  className="btn__link py-2 px-4"
+                >
+                  <button className="text-sm text-slate-600 hover">
+                    Visit website
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </div>

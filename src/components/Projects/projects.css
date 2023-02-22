@@ -3,9 +3,14 @@
     background: var(--recent-project-bg);
     box-shadow: var(--skill-shadow);
     border: var(--skill-border);
-    /* padding-left: 2rem; */
+    backdrop-filter: blur(20px);
     padding: 2rem;
 }
+
+/* .box-project {
+    background-image: linear-gradient(-120deg, #fff, #fff);
+    animation-duration: 1.25s;
+} */
 
 .btn__link {
     border-radius: 0.5rem;

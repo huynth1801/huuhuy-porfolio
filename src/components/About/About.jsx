@@ -18,12 +18,12 @@ const About = () => {
         ABOUT ME
       </div>
       <div className="md:flex md:justify-center">
-        <div className="home-introduce text-cyan-500 md:mx-auto md:text-left md:w-auto">
+        <div className="home-introduce text-cyan-500 md:mx-auto md:text-left md:w-auto md:px-8">
           <h2>
             <div className="title text-5xl font-bold my-2">{state.title}</div>
             <div className="titleTwo text-[18px]">{state.titleTwo}</div>
           </h2>
-          <div className="text text-[34px] p-2 md:px-0">
+          <div className="text text-[30px] p-2 md:px-0">
             <Typewriter
               options={{
                 autoStart: true,

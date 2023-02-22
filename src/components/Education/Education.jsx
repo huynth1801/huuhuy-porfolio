@@ -4,7 +4,7 @@ const Education = () => {
   return (
     <section className="bg-gradient-to-b from-[#F9FAFB] to-[#F7D0E6] py-4 md:py-8">
       <div className="m-auto mx-4">
-        <div className="text-center pt-[80px] pb-12">
+        <div className="text-center pb-12">
           <span className="text-5xl font-bold text-blue-500">EDUCATION</span>
         </div>
         <div className="education my-8 pb-12">
