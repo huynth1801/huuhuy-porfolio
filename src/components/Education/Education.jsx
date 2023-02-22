@@ -1,9 +1,17 @@
 import "./education.css";
+import { motion } from "framer-motion";
+import { fadeIn } from "../fadeIn";
 
 const Education = () => {
   return (
     <section className="bg-gradient-to-b from-[#F9FAFB] to-[#F7D0E6] py-4 md:py-8">
-      <div className="m-auto mx-4">
+      <motion.div
+        variants={fadeIn("down", 0.1)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.2 }}
+        className="m-auto mx-4"
+      >
         <div className="text-center pb-12">
           <span className="text-5xl font-bold text-blue-500">EDUCATION</span>
         </div>
@@ -26,7 +34,7 @@ const Education = () => {
             <div className="">Software Engineering - UEH University</div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

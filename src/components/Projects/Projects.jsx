@@ -2,18 +2,30 @@ import theband from "../../assets/img/theband.png";
 import food from "../../assets/img/food.png";
 import nike from "../../assets/img/nike.png";
 import "./projects.css";
+import { motion } from "framer-motion";
+import { fadeIn } from "../fadeIn";
 
 const Projects = () => {
   return (
     <section id="projects" className="bg-gradient-to-b from-[#F7D0E6] to-white">
       <div>
-        <div className="text-5xl text-blue-500 font-bold text-center">
+        <motion.div
+          variants={fadeIn("down", 0.1)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="text-5xl text-blue-500 font-bold text-center"
+        >
           <span>MY PROJECTS</span>
-        </div>
+        </motion.div>
         {/* projects */}
         <div className="my-12 mx-4 grid grid-cols-1 gap-10 z-10">
           {/* food */}
-          <div
+          <motion.div
+            variants={fadeIn("left", 0.1)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.2 }}
             className="recent__project-card project__slide-up my-4
             flex 
             flex-col 
@@ -65,10 +77,14 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* Nike */}
-          <div
-            className="recent__project-card my-4
+          <motion.div
+            variants={fadeIn("right", 0.01)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="recent__project-card project__slide-up my-4
             flex 
             flex-col 
             text-center 
@@ -118,10 +134,14 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* The band */}
-          <div
-            className="recent__project-card my-4
+          <motion.div
+            variants={fadeIn("left", 0.01)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="recent__project-card project__slide-up my-4
             flex 
             flex-col 
             text-center 
@@ -171,7 +191,7 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

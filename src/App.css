@@ -6,5 +6,6 @@
     --skill-bg: hsla(0,0%,100%,.527);
     --skill-border: 1px solid #fff3;
     --skill-shadow: #00000026 0px 5px 15px 0px;
-    --recent-project-bg: #fff
+    --recent-project-bg: #fff;
+    --red: #ff0055;
 }

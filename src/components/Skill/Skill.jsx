@@ -6,11 +6,19 @@ import javascript from "../../assets/img/javascript.svg";
 import python from "../../assets/img/python.png";
 import sql from "../../assets/img/mysql.png";
 import "./skill.css";
+import { motion } from "framer-motion";
+import { fadeIn } from "../fadeIn";
 
 const Skill = () => {
   return (
     <div className="bg-gradient-to-b from-slate-100 to-[#F9FAFB] min-h-screen flex items-center justify-center px-8 md:px-16">
-      <div className="relative w-full max-w-lg">
+      <motion.div
+        variants={fadeIn("down", 0.1)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.2 }}
+        className="relative w-full max-w-lg"
+      >
         <div
           className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 
         rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob md:-left-2/3
@@ -154,7 +162,7 @@ const Skill = () => {
             </div>
           </div>
         </section>
-      </div>
+      </motion.div>
     </div>
   );
 };

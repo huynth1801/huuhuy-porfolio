@@ -1,6 +1,8 @@
 import avatar from "../../assets/img/avatar.jpeg";
 import Typewriter from "typewriter-effect";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../fadeIn";
 
 const About = () => {
   const [state] = useState({
@@ -14,13 +16,27 @@ const About = () => {
       id="about"
       className="bg-gradient-to-b from-[#F7D0E6] to-slate-100 justify-center items-center text-center opacity-190"
     >
-      <div className="text-5xl font-bold py-12 text-center text-blue-400 md:py-10">
+      <motion.div
+        variants={fadeIn("up", 0.1)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.2 }}
+        className="text-5xl font-bold py-12 text-center text-blue-400 md:py-10"
+      >
         ABOUT ME
-      </div>
-      <div className="md:flex md:justify-center">
+      </motion.div>
+      <motion.div
+        variants={fadeIn("down", 0.1)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.2 }}
+        className="md:flex md:justify-center"
+      >
         <div className="home-introduce text-cyan-500 md:mx-auto md:text-left md:w-auto md:px-8">
           <h2>
-            <div className="title text-5xl font-bold my-2">{state.title}</div>
+            <motion.div className="title text-5xl font-bold my-2">
+              {state.title}
+            </motion.div>
             <div className="titleTwo text-[18px]">{state.titleTwo}</div>
           </h2>
           <div className="text text-[30px] p-2 md:px-0">
@@ -43,8 +59,14 @@ const About = () => {
             alt="Picture of me"
           />
         </div>
-      </div>
-      <div className="mx-4 my-2 md:mt-12 md:mx-8">
+      </motion.div>
+      <motion.div
+        variants={fadeIn("left", 0.1)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.2 }}
+        className="mx-4 my-2 md:mt-12 md:mx-8"
+      >
         <p className="text-left md:text-[18px]">
           I am a hardworking and ambitious individual with a great passion for
           programming. I am currently studying website development. I have
@@ -53,7 +75,7 @@ const About = () => {
           improve my front-end skils. I am looking for an internship as
           front-end developer
         </p>
-      </div>
+      </motion.div>
       <div className="py-4">
         <button
           className="transition ease-in-out delay-150 bg-red-500  my-4
