@@ -12,13 +12,13 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-gray-50 justify-center items-center text-center"
+      className="bg-gradient-to-b from-[#F7D0E6] to-slate-100 justify-center items-center text-center opacity-190"
     >
-      <div className="text-[36px] font-bold py-12 text-center md:py-10">
+      <div className="text-5xl font-bold py-12 text-center text-blue-400 md:py-10">
         ABOUT ME
       </div>
       <div className="md:flex md:justify-center">
-        <div className="home-introduce text-cyan-600 md:mx-auto md:text-left md:w-auto">
+        <div className="home-introduce text-cyan-500 md:mx-auto md:text-left md:w-auto">
           <h2>
             <div className="title text-5xl font-bold my-2">{state.title}</div>
             <div className="titleTwo text-[18px]">{state.titleTwo}</div>
@@ -35,7 +35,7 @@ const About = () => {
           </div>
         </div>
         {/* My avatar */}
-        <div className="py-8 bg-no-repeat md:py-0 md:mx-auto">
+        <div className="py-8 px-6 bg-no-repeat md:py-0 md:mx-auto">
           <img
             src={avatar}
             className="rounded-xl md:h-[30rem] md:w-auto
@@ -56,7 +56,7 @@ const About = () => {
       </div>
       <div className="py-4">
         <button
-          className="transition ease-in-out delay-150 bg-red-500 
+          className="transition ease-in-out delay-150 bg-red-500  my-4
             rounded-full py-2 px-6 text-white font-semibold hover:-translate-y-1 hover:scale-110
          hover:bg-red-900 duration-300"
         >

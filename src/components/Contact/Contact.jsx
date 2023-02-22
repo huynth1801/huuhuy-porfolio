@@ -4,8 +4,8 @@ const Contact = () => {
   return (
     <section id="contact" className="mx-4 my-6">
       <div className="text-center">
-        <div className="font-bold my-4">
-          <span className="text-[36px]">GET IN TOUCH</span>
+        <div className="font-bold my-6">
+          <span className="text-5xl text-blue-500">GET IN TOUCH</span>
         </div>
         <div className="my-2">
           Send me an{" "}

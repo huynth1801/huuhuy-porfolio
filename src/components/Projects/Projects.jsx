@@ -5,9 +5,12 @@ import "./projects.css";
 
 const Projects = () => {
   return (
-    <section id="projects" className="mt-12 mx-4">
+    <section
+      id="projects"
+      className="my-auto bg-gradient-to-b from-[#F7D0E6] to-white"
+    >
       <div>
-        <div className="text-[36px] font-bold text-center">
+        <div className="text-5xl text-blue-500 font-bold text-center">
           <span>MY PROJECTS</span>
         </div>
         {/* projects */}

@@ -9,7 +9,7 @@ import "./skill.css";
 
 const Skill = () => {
   return (
-    <div className="bg-gray-50 min-h-screen flex items-center justify-center px-8 md:px-16">
+    <div className="bg-gradient-to-b from-slate-100 to-[#F9FAFB] min-h-screen flex items-center justify-center px-8 md:px-16">
       <div className="relative w-full max-w-lg">
         <div
           className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 
@@ -28,79 +28,97 @@ const Skill = () => {
         {/* Skills here */}
         <section
           id="skills"
-          className="my-12 mx-4 justify-center items-center text-center"
+          className="my-8 mx-4 justify-center items-center text-center"
         >
-          <div className="mb-4">
-            <span className="text-[36px] font-bold text-center">MY SKILLS</span>
+          <div className="mb-8 ">
+            <span className="text-5xl font-bold text-center text-blue-500">
+              MY SKILLS
+            </span>
           </div>
-          <div className="Skills__Wrapper grid gap-5">
+          <div className="Skills__Wrapper grid gap-5 md:my-[90px]">
             <div
               className="Skills__SkillCards__Wrapper
-                    grid grid-cols-3 gap-5"
+                    grid grid-cols-3 gap-5 md:grid-cols-4 md:gap-6"
             >
               {/* HTML icon */}
               <div
                 className="Skills__SkillsCards show flex
-              relative left-0 
-              w-full h-full 
-              p-4 items-center
-              text-center"
-              >
-                <div className="flex flex-col items-center w-full">
-                  <img src={html} alt="html icon" />
-                  <span className="text-sm mt-2">HTML</span>
-                </div>
-              </div>
-              {/* CSS icon */}
-              <div
-                className="Skills__SkillsCards show flex 
                           relative left-0 
                           w-full h-full 
                           p-4 items-center
                           text-center"
               >
                 <div className="flex flex-col items-center w-full">
-                  <img src={css} alt="css icon" />
+                  <img
+                    src={html}
+                    alt="html icon"
+                    className="w-[4rem] h-[4rem]"
+                  />
+                  <span className="text-sm mt-2">HTML</span>
+                </div>
+              </div>
+              {/* CSS icon */}
+              <div
+                className="Skills__SkillsCards show flex flex-col
+                          relative left-0 
+                          w-full h-full 
+                          p-4 items-center
+                          text-center"
+              >
+                <div className="flex flex-col items-center w-full">
+                  <img src={css} alt="css icon" className="w-[4rem] h-[4rem]" />
                   <span className="text-sm mt-2">CSS</span>
                 </div>
               </div>
               {/* Javascript icon */}
               <div
-                className="Skills__SkillsCards show flex 
-            relative left-0 
-            w-full h-full 
-            p-4 items-center
-            text-center"
+                className="Skills__SkillsCards show flex
+                          relative left-0 
+                          w-full h-full 
+                          p-4 items-center
+                          text-center"
               >
-                <div className="flex flex-col items-center w-full">
-                  <img src={javascript} alt="javascript icon" />
+                <div className="flex flex-col items-center w-full ">
+                  <img
+                    src={javascript}
+                    alt="javascript icon"
+                    className="w-[4rem] h-[4rem]"
+                  />
                   <span className="text-sm mt-2">Javascript</span>
                 </div>
               </div>
               {/* ReactJs icon */}
               <div
                 className="Skills__SkillsCards show flex 
-            relative left-0 
-            w-full h-full 
-            p-4 items-center
-            text-center"
+                        relative left-0 
+                        w-full h-full 
+                        p-4 items-center
+                        text-center"
               >
-                <div className="flex flex-col items-center w-full">
-                  <img src={react} alt="reactjs icon" />
+                <div className="flex flex-col items-center w-full ">
+                  <img
+                    src={react}
+                    alt="reactjs icon"
+                    className="w-[4rem] h-[4rem]"
+                  />
                   <span className="text-sm mt-2">React.js</span>
                 </div>
               </div>
               {/* Tailwind icon */}
               <div
                 className="Skills__SkillsCards show flex 
-            relative left-0 
-            w-full h-full 
-            p-4 items-center
-            text-center"
+                        relative left-0 
+                        w-full h-full 
+                        p-4 items-center
+                        text-center"
               >
-                <div className="flex flex-col items-center w-full">
-                  <img src={tailwindcss} alt="tailwind icon" />
-                  <span className="text-sm mt-2 md:">Tailwind</span>
+                <div className="flex flex-col items-center w-full justify-center">
+                  <img
+                    src={tailwindcss}
+                    alt="tailwind icon"
+                    className="w-[4rem] h-[4rem]"
+                  />
+                  <span className="text-sm mt-2">Tailwind</span>
                 </div>
               </div>
               {/* Python icon */}
@@ -112,7 +130,11 @@ const Skill = () => {
             text-center"
               >
                 <div className="flex flex-col items-center w-full">
-                  <img src={python} alt="Python icon" />
+                  <img
+                    src={python}
+                    alt="Python icon"
+                    className="w-[4rem] h-[4rem]"
+                  />
                   <span className="text-sm mt-2">Python</span>
                 </div>
               </div>
@@ -125,7 +147,7 @@ const Skill = () => {
             text-center"
               >
                 <div className="flex flex-col items-center w-full">
-                  <img src={sql} alt="SQL icon" />
+                  <img src={sql} alt="SQL icon" className="w-[4rem] h-[4rem]" />
                   <span className="text-sm mt-2">SQL</span>
                 </div>
               </div>

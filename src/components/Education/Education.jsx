@@ -2,12 +2,12 @@ import "./education.css";
 
 const Education = () => {
   return (
-    <section className="">
-      <div className="mt-12 mx-4">
-        <div className="text-center py-4">
-          <span className="text-[36px] font-bold">EDUCATION</span>
+    <section className="bg-gradient-to-b from-[#F9FAFB] to-[#F7D0E6] py-4 md:py-8">
+      <div className="m-auto mx-4">
+        <div className="text-center pt-[80px] pb-12">
+          <span className="text-5xl font-bold text-blue-500">EDUCATION</span>
         </div>
-        <div className="education my-8">
+        <div className="education my-8 pb-12">
           <div className="education__time pl-6">
             <span className="time font-light text-zinc-400 ">2018 - 2022</span>
             <div className="text-[20px] font-semibold mb-4">
