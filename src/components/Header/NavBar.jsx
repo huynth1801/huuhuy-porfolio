@@ -9,7 +9,7 @@ const NavBar = () => {
   };
   return (
     <header class="sticky top-0 z-10 bg-teal-700 text-white">
-      <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
+      <section class="mx-auto flex max-w-4xl items-center justify-between p-8 md:p-6">
         <h1 class="text-3xl font-medium flex flex-row text-center items-center">
           <a href="#hero" className="mr-2">
             HUY NGUYEN
@@ -36,16 +36,16 @@ const NavBar = () => {
             </button>
           )}
           <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
-            <a href="#about" class="md: hovers hover:text-[#1095c1]">
+            <a href="#about" class="md: hovers hover:text-[#3dc3f0]">
               About
             </a>
-            <a href="#skills" class="md: hovers hover:text-[#1095c1]">
+            <a href="#skills" class="md: hovers hover:text-[#3dc3f0]">
               Skills
             </a>
-            <a href="#projects" class="md: hovers hover:text-[#1095c1]">
+            <a href="#projects" class="md: hovers hover:text-[#3dc3f0]">
               Projects
             </a>
-            <a href="#contact" class="md: hovers hover:text-[#1095c1]">
+            <a href="#contact" class="md: hovers hover:text-[#3dc3f0]">
               Contact
             </a>
           </nav>

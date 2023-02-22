@@ -4,7 +4,7 @@
 
 .hovers {
     --s: 0.1em;   /* the thickness of the line */
-    --c: #1095c1; /* the color */
+    --c: #3dc3f0; /* the color */
     
     color: #fff;
     padding-bottom: var(--s);

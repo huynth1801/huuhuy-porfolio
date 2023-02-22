@@ -10,4 +10,11 @@
     .toggle-btn {
         @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
     }
+
+    .animation-delay-2000 {
+        animation-delay: 2s;
+      }
+    .animation-delay-4000 {
+        animation-delay: 4s;
+      }
 }
