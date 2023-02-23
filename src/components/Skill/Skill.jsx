@@ -16,7 +16,7 @@ const Skill = () => {
         variants={fadeIn("down", 0.1)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.8 }}
         className="relative w-full max-w-lg"
       >
         <div

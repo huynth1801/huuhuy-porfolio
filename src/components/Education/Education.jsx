@@ -9,7 +9,7 @@ const Education = () => {
         variants={fadeIn("down", 0.1)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.8 }}
         className="m-auto mx-4"
       >
         <div className="text-center pb-12">

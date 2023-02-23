@@ -20,7 +20,7 @@ const About = () => {
         variants={fadeIn("up", 0.1)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
         className="text-5xl font-bold py-12 text-center text-blue-400 md:py-10"
       >
         ABOUT ME
@@ -29,7 +29,7 @@ const About = () => {
         variants={fadeIn("down", 0.1)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
         className="md:flex md:justify-center"
       >
         <div className="home-introduce text-cyan-500 md:mx-auto md:text-left md:w-auto md:px-8">
@@ -64,7 +64,7 @@ const About = () => {
         variants={fadeIn("left", 0.1)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
         className="mx-4 my-2 md:mt-12 md:mx-8"
       >
         <p className="text-left md:text-[18px]">

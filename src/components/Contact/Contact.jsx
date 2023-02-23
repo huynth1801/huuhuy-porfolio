@@ -1,19 +1,11 @@
 import "./contact.css";
-import { motion } from "framer-motion";
-import { fadeIn } from "../fadeIn";
 
 const Contact = () => {
   return (
     <section id="contact" className="mx-4 my-6">
-      <motion.div
-        variants={fadeIn("up", 0.001)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.01 }}
-        className="text-center"
-      >
-        <div className="font-bold my-6">
-          <span className="text-5xl text-blue-500">GET IN TOUCH</span>
+      <div className="text-center">
+        <div className="font-bold my-4">
+          <span className="text-[36px]">GET IN TOUCH</span>
         </div>
         <div className="my-2">
           Send me an{" "}
@@ -120,7 +112,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };

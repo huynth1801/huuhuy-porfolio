@@ -8,7 +8,7 @@ const NavBar = () => {
     setToggle(!toggle);
   };
   return (
-    <header class="sticky top-0 z-10 bg-teal-700 text-white">
+    <header class="sticky top-0 z-10 bg-gradient-to-r from-[#6a82fb] to-[#fc5c7d] text-white">
       <section class="mx-auto flex max-w-4xl items-center justify-between p-8 md:p-6">
         <h1 class="text-3xl font-medium flex flex-row text-center items-center">
           <a href="#hero" className="mr-2">
