@@ -78,7 +78,7 @@
     position: absolute;
     height: 15px;
     width: 15px;
-    background-color: #fff;
+    /* background-color: #fff; */
     bottom: -4px;
     left: 50%;
     transform: translateX(-50%) rotate(45deg);

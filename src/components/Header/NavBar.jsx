@@ -42,9 +42,11 @@ const NavBar = () => {
             <a href="#skills" class="md: hovers hover:text-[#3dc3f0]">
               Skills
             </a>
+
             <a href="#projects" class="md: hovers hover:text-[#3dc3f0]">
               Projects
             </a>
+
             <a href="#contact" class="md: hovers hover:text-[#3dc3f0]">
               Contact
             </a>
