@@ -21,7 +21,7 @@ const About = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.2 }}
-        className="text-5xl font-bold py-12 text-center text-blue-400 md:py-10"
+        className="text-5xl font-bold py-12 text-center text-blue-400 md:py-10 font-dg"
       >
         ABOUT ME
       </motion.div>

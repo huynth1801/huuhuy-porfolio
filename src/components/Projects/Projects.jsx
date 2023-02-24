@@ -14,7 +14,7 @@ const Projects = () => {
         whileInView={"show"}
         viewport={{ once: true, amount: 0.2 }}
       >
-        <div className="text-5xl text-blue-500 font-bold text-center">
+        <div className="text-5xl text-blue-500 font-bold text-center font-dg">
           <span>MY PROJECTS</span>
         </div>
         {/* projects */}

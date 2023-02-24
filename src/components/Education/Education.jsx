@@ -13,7 +13,9 @@ const Education = () => {
         className="m-auto mx-4"
       >
         <div className="text-center pb-12">
-          <span className="text-5xl font-bold text-blue-500">EDUCATION</span>
+          <span className="text-5xl font-bold text-blue-500 font-dg">
+            EDUCATION
+          </span>
         </div>
         <div className="education my-8 pb-12">
           <div className="education__time pl-6">

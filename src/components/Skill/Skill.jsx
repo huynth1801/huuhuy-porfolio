@@ -39,7 +39,7 @@ const Skill = () => {
           className="my-8 mx-4 justify-center items-center text-center"
         >
           <div className="mb-8 ">
-            <span className="text-5xl font-bold text-center text-blue-500">
+            <span className="text-5xl font-bold text-center text-blue-500 font-dg">
               MY SKILLS
             </span>
           </div>
@@ -156,7 +156,7 @@ const Skill = () => {
               >
                 <div className="flex flex-col items-center w-full">
                   <img src={sql} alt="SQL icon" className="w-[4rem] h-[4rem]" />
-                  <span className="text-sm mt-2">SQL</span>
+                  <span className="text-sm mt-2">MySQL</span>
                 </div>
               </div>
             </div>

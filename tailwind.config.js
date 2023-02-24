@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       qs: ["Quicksand"],
+      dg: ["Dangrek"],
     },
     keyframes: {
       "open-menu": {
