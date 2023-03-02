@@ -8,6 +8,7 @@ import sql from "../../assets/img/mysql.png";
 import "./skill.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../fadeIn";
+import BackToTopButton from "../BackToTopButton.jsx";
 
 const Skill = () => {
   return (
@@ -162,6 +163,7 @@ const Skill = () => {
             </div>
           </div>
         </section>
+        <BackToTopButton />
       </motion.div>
     </div>
   );
