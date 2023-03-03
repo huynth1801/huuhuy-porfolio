@@ -14,7 +14,7 @@ const Education = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.8 }}
-        className="mx-4 px-[100px]"
+        className="m-auto mx-4 md:px-[100px]"
       >
         <div className="text-center pb-12">
           <span className="text-5xl font-bold text-blue-500 font-dg">
