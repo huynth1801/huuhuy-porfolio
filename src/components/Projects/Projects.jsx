@@ -34,13 +34,14 @@ const Projects = () => {
             duration-300
             cursor-pointer
             hover:bg-fuchsia-100
-            hover:scale-105
+            md:hover:scale-105
             md:grid
             md:grid-cols-2
             md:gap-10
             md:mx-38
             lg:mx-28
             dark:bg-[#464749]
+            dark:hover:bg-pink-800
             "
           >
             <img
@@ -89,13 +90,14 @@ const Projects = () => {
             duration-300
             cursor-pointer
             hover:bg-fuchsia-100
-            hover:scale-105
+            md:hover:scale-105
             md:grid
             md:grid-cols-2
             md:gap-10
             md:mx-38
             lg:mx-28
             dark:bg-[#464749]
+            dark:hover:bg-pink-800
             "
           >
             <img
@@ -143,13 +145,14 @@ const Projects = () => {
             duration-300
             cursor-pointer
             hover:bg-fuchsia-100
-            hover:scale-105
+            md:hover:scale-105
             md:grid
             md:grid-cols-2
             md:gap-10
             md:mx-38
             lg:mx-28
             dark:bg-[#464749]
+            dark:hover:bg-pink-800
             "
           >
             <img
