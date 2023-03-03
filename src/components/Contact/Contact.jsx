@@ -2,10 +2,15 @@ import "./contact.css";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-8 dark:bg-purple-700">
+    <section
+      id="contact"
+      className="py-8 bg-gradient-to-b dark:from-[#172029] dark:to-[#343f4a]"
+    >
       <div className="text-center ">
-        <div className="font-bold py-4 dark:bg-purple-700">
-          <span className="text-5xl text-blue-500 font-dg">GET IN TOUCH</span>
+        <div className="font-bold py-4 dark:from-[#343f4a] dark:to-[#172029]">
+          <span className="text-5xl text-blue-500 font-dg dark:text-blue-600">
+            GET IN TOUCH
+          </span>
         </div>
         <div className="my-2 dark:text-white">
           Send me an{" "}

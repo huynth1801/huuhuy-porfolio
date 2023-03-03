@@ -32,13 +32,13 @@ const Skill = () => {
                         lg:-left-full"
         ></div>
         <div
-          className="absolute -right-4 w-72 h-72 bg-pink-300 dark:bg-blue-300
+          className="absolute -right-4 w-72 h-72 bg-pink-300 dark:bg-sky-400
                      rounded-full mix-blend-multiply 
                      filter blur-xl opacity-70 
                      animate-delay-2000 md:top-1/3 md:-right-30"
         ></div>
         <div
-          className="absolute bottom-20 left-10 w-72 h-72 bg-yellow-300 dark:bg-red-500
+          className="absolute bottom-20 left-10 w-72 h-72 bg-yellow-300 dark:bg-red-400
         rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-delay-4000 md:-right-2/3"
         ></div>
 

@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="w-full pb-2 dark:bg-purple-700">
+    <div className="w-full pb-2 dark:bg-[#343f4a]">
       <div
         className="flex flex-col w-full text-xs
         items-center justify-center
