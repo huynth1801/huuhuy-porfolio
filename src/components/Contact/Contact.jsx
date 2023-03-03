@@ -2,19 +2,19 @@ import "./contact.css";
 
 const Contact = () => {
   return (
-    <section id="contact" className="mx-4 my-6">
-      <div className="text-center">
-        <div className="font-bold my-4">
+    <section id="contact" className="py-8 dark:bg-purple-700">
+      <div className="text-center ">
+        <div className="font-bold py-4 dark:bg-purple-700">
           <span className="text-5xl text-blue-500 font-dg">GET IN TOUCH</span>
         </div>
-        <div className="my-2">
+        <div className="my-2 dark:text-white">
           Send me an{" "}
           <a href="mailto:huuhuy1801@gmail.com" className="text-red-500">
             email
           </a>{" "}
           or contact with me via media social!
         </div>
-        <div className="flex justify-center text-center my-6">
+        <div className="flex justify-center text-center py-6">
           <div className="wrapper grid grid-cols-4 gap-4 items-center">
             <div className="icon facebook relative flex flex-col items-center">
               {/* Facebook */}
@@ -23,7 +23,7 @@ const Contact = () => {
                 <a
                   href="https://www.facebook.com/huy.nguyenthaihuu/"
                   target="_blank"
-                  className="btn__social mb-2 
+                  className="btn__social mb-2 dark:bg-black dark:text-white
                 inline-block rounded-full 
                 p-3 shadow-md transition 
                 duration-150 ease-in-out 
@@ -47,7 +47,7 @@ const Contact = () => {
               <a
                 href="https://www.instagram.com/huynotcs/"
                 target="_blank"
-                className="btn__social mb-2 
+                className="btn__social mb-2 dark:bg-black dark:text-white
                 inline-block rounded-full 
                 p-3 shadow-md transition 
                 duration-150 ease-in-out 
@@ -70,7 +70,7 @@ const Contact = () => {
               <a
                 href="https://www.linkedin.com/in/huy-nguyen-085382206/"
                 target="_blank"
-                className="btn__social mb-2
+                className="btn__social mb-2 dark:bg-black dark:text-white
                 inline-block rounded-full 
                 p-3 shadow-md transition 
                 duration-150 ease-in-out 
@@ -93,7 +93,7 @@ const Contact = () => {
               <a
                 href="https://github.com/huynth1801"
                 target="_blank"
-                className="btn__social mb-2
+                className="btn__social mb-2 dark:bg-black dark:text-white
                 inline-block rounded-full 
                 p-3 shadow-md transition 
                 duration-150 ease-in-out 

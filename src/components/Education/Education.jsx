@@ -4,7 +4,11 @@ import { fadeIn } from "../fadeIn";
 
 const Education = () => {
   return (
-    <section className="bg-gradient-to-b from-[#F9FAFB] to-[#F7D0E6] py-4 md:py-8">
+    <section
+      className="bg-gradient-to-b from-[#F9FAFB] to-[#F7D0E6] 
+                        dark:from-[#172029] dark:to-[#343f4a]
+                        py-4 md:py-8"
+    >
       <motion.div
         variants={fadeIn("down", 0.1)}
         initial="hidden"
@@ -17,9 +21,11 @@ const Education = () => {
             EDUCATION
           </span>
         </div>
-        <div className="education my-8 pb-12">
-          <div className="education__time pl-6">
-            <span className="time font-light text-zinc-400 ">2018 - 2022</span>
+        <div className="education my-8 pb-12 dark:bg-[#464749]">
+          <div className="education__time pl-6 dark:text-white ">
+            <span className="time font-light text-zinc-400 dark:text-red-300">
+              2018 - 2022
+            </span>
             <div className="text-[20px] font-semibold mb-4">
               Banchelor's Degree
             </div>
@@ -28,8 +34,10 @@ const Education = () => {
               Technology
             </div>
           </div>
-          <div className="education__time pl-6 pt-10">
-            <span className="time font-light text-zinc-400">2023 - now</span>
+          <div className="education__time pl-6 pt-10 dark:text-white">
+            <span className="time font-light text-zinc-400 dark:text-red-300">
+              2023 - now
+            </span>
             <div className="text-[20px] font-semibold mb-4">
               Banchelor's Degree
             </div>

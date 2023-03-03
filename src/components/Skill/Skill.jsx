@@ -12,7 +12,12 @@ import BackToTopButton from "../BackToTopButton.jsx";
 
 const Skill = () => {
   return (
-    <div className="bg-gradient-to-b from-slate-100 to-[#F9FAFB] min-h-screen flex items-center justify-center px-8 md:px-16">
+    <div
+      className="bg-gradient-to-b from-slate-100 to-[#F9FAFB] 
+                    dark:from-pink-700 dark:to-[#172029]
+                    min-h-screen flex items-center 
+                    justify-center px-8 md:px-16"
+    >
       <motion.div
         variants={fadeIn("down", 0.1)}
         initial="hidden"
@@ -21,16 +26,19 @@ const Skill = () => {
         className="relative w-full max-w-lg"
       >
         <div
-          className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 
-        rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob md:-left-2/3
-        lg:-left-full"
+          className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 dark:bg-orange-500
+                    rounded-full mix-blend-multiply filter blur-xl 
+                    opacity-70 animate-blob md:-left-2/3
+                        lg:-left-full"
         ></div>
         <div
-          className="absolute -right-4 w-72 h-72 bg-pink-300 
-        rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-delay-2000 md:top-1/3 md:-right-30"
+          className="absolute -right-4 w-72 h-72 bg-pink-300 dark:bg-blue-300
+                     rounded-full mix-blend-multiply 
+                     filter blur-xl opacity-70 
+                     animate-delay-2000 md:top-1/3 md:-right-30"
         ></div>
         <div
-          className="absolute bottom-20 left-10 w-72 h-72 bg-yellow-300 
+          className="absolute bottom-20 left-10 w-72 h-72 bg-yellow-300 dark:bg-red-500
         rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-delay-4000 md:-right-2/3"
         ></div>
 
@@ -52,7 +60,7 @@ const Skill = () => {
               {/* HTML icon */}
               <div
                 className="Skills__SkillsCards show flex
-                          relative left-0 
+                          relative left-0 dark:bg-[#464749] dark:text-white
                           w-full h-full 
                           p-4 items-center
                           text-center"
@@ -69,7 +77,7 @@ const Skill = () => {
               {/* CSS icon */}
               <div
                 className="Skills__SkillsCards show flex flex-col
-                          relative left-0 
+                          relative left-0 dark:bg-[#464749] dark:text-white
                           w-full h-full 
                           p-4 items-center
                           text-center"
@@ -82,7 +90,7 @@ const Skill = () => {
               {/* Javascript icon */}
               <div
                 className="Skills__SkillsCards show flex
-                          relative left-0 
+                          relative left-0  dark:bg-[#464749] dark:text-white
                           w-full h-full 
                           p-4 items-center
                           text-center"
@@ -99,7 +107,7 @@ const Skill = () => {
               {/* ReactJs icon */}
               <div
                 className="Skills__SkillsCards show flex 
-                        relative left-0 
+                        relative left-0 dark:bg-[#464749] dark:text-white
                         w-full h-full 
                         p-4 items-center
                         text-center"
@@ -116,7 +124,7 @@ const Skill = () => {
               {/* Tailwind icon */}
               <div
                 className="Skills__SkillsCards show flex 
-                        relative left-0 
+                        relative left-0 dark:bg-[#464749] dark:text-white
                         w-full h-full 
                         p-4 items-center
                         text-center"
@@ -133,10 +141,10 @@ const Skill = () => {
               {/* Python icon */}
               <div
                 className="Skills__SkillsCards show flex 
-            relative left-0 
-            w-full h-full 
-            p-4 items-center
-            text-center"
+                            relative left-0 dark:bg-[#464749] dark:text-white
+                            w-full h-full 
+                            p-4 items-center
+                            text-center"
               >
                 <div className="flex flex-col items-center w-full">
                   <img
@@ -150,10 +158,10 @@ const Skill = () => {
               {/* sql icon */}
               <div
                 className="Skills__SkillsCards show flex 
-            relative left-0 
-            w-full h-full 
-            p-4 items-center
-            text-center"
+                            relative left-0 dark:bg-[#464749] dark:text-white
+                            w-full h-full 
+                            p-4 items-center
+                            text-center"
               >
                 <div className="flex flex-col items-center w-full">
                   <img src={sql} alt="SQL icon" className="w-[4rem] h-[4rem]" />

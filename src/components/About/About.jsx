@@ -15,7 +15,8 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-gradient-to-b from-[#F7D0E6] to-slate-100 justify-center items-center text-center opacity-190"
+      className="bg-gradient-to-b from-[#F7D0E6] to-slate-100 dark:from-purple-700 dark:to-pink-700
+      justify-center items-center text-center opacity-190"
     >
       <motion.div
         variants={fadeIn("up", 0.1)}
@@ -33,7 +34,7 @@ const About = () => {
         viewport={{ once: true, amount: 0.2 }}
         className="md:flex md:justify-center"
       >
-        <div className="home-introduce text-cyan-500 md:mx-auto md:text-left md:w-auto md:px-8">
+        <div className="home-introduce text-cyan-500 md:mx-auto md:text-left md:w-auto md:px-8 dark:text-cyan-6">
           <h2>
             <motion.div className="title text-5xl font-bold my-2">
               {state.title}
@@ -68,7 +69,7 @@ const About = () => {
         viewport={{ once: true, amount: 0.2 }}
         className="mx-4 my-2 md:mt-12 md:mx-8"
       >
-        <p className="text-left md:text-[18px]">
+        <p className="text-left md:text-[18px] dark:text-white">
           I am a hardworking and ambitious individual with a great passion for
           programming. I am currently studying website development. I have
           communication skils, self-study ability, like to study new
@@ -81,8 +82,9 @@ const About = () => {
         <a href={resume} download="myresume">
           <button
             className="transition ease-in-out delay-150 bg-red-500  my-4
-            rounded-full py-2 px-6 text-white font-semibold hover:-translate-y-1 hover:scale-110
-         hover:bg-red-900 duration-300"
+            rounded-full py-2 px-6 text-white font-semibold dark:text-black
+            hover:-translate-y-1 hover:scale-110
+          hover:bg-red-900 duration-300"
           >
             My Resume
           </button>

@@ -25,8 +25,8 @@ const BackToTopButton = () => {
       {backToTopButton && (
         <button
           className="fixed bottom-8 right-8
-            text-5xl font-bold text-sky-400 rounded-full
-            opacity-50 hover:opacity-100 hover:bg-purple-300
+            text-5xl font-bold text-sky-400 rounded-full dark:text-white
+            opacity-50 hover:opacity-100 hover:bg-purple-300 dark:hover:bg-purple-500
             hover:text-white
            "
           onClick={scrollUp}
