@@ -26,20 +26,21 @@ const Skill = () => {
         className="relative w-full max-w-lg"
       >
         <div
-          className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 dark:bg-orange-500
+          className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 dark:bg-purple-500 dark:opacity-90
                     rounded-full mix-blend-multiply filter blur-xl 
                     opacity-70 animate-blob md:-left-2/3
-                        lg:-left-full"
+                    lg:-left-full"
         ></div>
         <div
-          className="absolute -right-4 w-72 h-72 bg-pink-300 dark:bg-sky-400
+          className="absolute -right-4 w-72 h-72 bg-pink-300 dark:bg-cyan-500 dark:opacity-90
                      rounded-full mix-blend-multiply 
                      filter blur-xl opacity-70 
                      animate-delay-2000 md:top-1/3 md:-right-30"
         ></div>
         <div
-          className="absolute bottom-20 left-10 w-72 h-72 bg-yellow-300 dark:bg-red-400
-        rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-delay-4000 md:-right-2/3"
+          className="absolute bottom-20 left-10 w-72 h-72 bg-yellow-300 dark:bg-orange-500 dark:opacity-90
+                      rounded-full mix-blend-multiply filter blur-xl 
+                      opacity-70 animate-delay-4000 md:-right-2/3"
         ></div>
 
         {/* Skills here */}
