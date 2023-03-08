@@ -4,11 +4,50 @@ import react from "../../assets/img/react.svg";
 import tailwindcss from "../../assets/img/tailwindcss.svg";
 import javascript from "../../assets/img/javascript.svg";
 import python from "../../assets/img/python.png";
-import sql from "../../assets/img/mysql.png";
+import mysql from "../../assets/img/mysql.png";
 import "./skill.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../fadeIn";
 import BackToTopButton from "../BackToTopButton.jsx";
+import { useEffect, useState } from "react";
+
+const dataIcon = [
+  {
+    id: "01",
+    imgUrl: html,
+    desc: "HTML",
+  },
+  {
+    id: "02",
+    imgUrl: javascript,
+    desc: "Javascript",
+  },
+  {
+    id: "03",
+    imgUrl: css,
+    desc: "CSS",
+  },
+  {
+    id: "04",
+    imgUrl: react,
+    desc: "React.js",
+  },
+  {
+    id: "05",
+    imgUrl: tailwindcss,
+    desc: "TailwindCSS",
+  },
+  {
+    id: "06",
+    imgUrl: python,
+    desc: "Python",
+  },
+  {
+    id: "07",
+    imgUrl: mysql,
+    desc: "MySQL",
+  },
+];
 
 const Skill = () => {
   return (
@@ -59,116 +98,25 @@ const Skill = () => {
                     grid grid-cols-3 gap-5 md:grid-cols-4 md:gap-6"
             >
               {/* HTML icon */}
-              <div
-                className="Skills__SkillsCards show flex
+              {dataIcon.map((item, index) => (
+                <div
+                  key={index}
+                  className="Skills__SkillsCards show flex
                           relative left-0 dark:bg-[#464749] dark:text-white
                           w-full h-full 
                           p-4 items-center
                           text-center"
-              >
-                <div className="flex flex-col items-center w-full">
-                  <img
-                    src={html}
-                    alt="html icon"
-                    className="w-[4rem] h-[4rem]"
-                  />
-                  <span className="text-sm mt-2">HTML</span>
+                >
+                  <div className="flex flex-col items-center w-full">
+                    <img
+                      src={item.imgUrl}
+                      alt="html icon"
+                      className="w-[4rem] h-[4rem]"
+                    />
+                    <span className="text-sm mt-2">{item.desc}</span>
+                  </div>
                 </div>
-              </div>
-              {/* CSS icon */}
-              <div
-                className="Skills__SkillsCards show flex flex-col
-                          relative left-0 dark:bg-[#464749] dark:text-white
-                          w-full h-full 
-                          p-4 items-center
-                          text-center"
-              >
-                <div className="flex flex-col items-center w-full">
-                  <img src={css} alt="css icon" className="w-[4rem] h-[4rem]" />
-                  <span className="text-sm mt-2">CSS</span>
-                </div>
-              </div>
-              {/* Javascript icon */}
-              <div
-                className="Skills__SkillsCards show flex
-                          relative left-0  dark:bg-[#464749] dark:text-white
-                          w-full h-full 
-                          p-4 items-center
-                          text-center"
-              >
-                <div className="flex flex-col items-center w-full ">
-                  <img
-                    src={javascript}
-                    alt="javascript icon"
-                    className="w-[4rem] h-[4rem]"
-                  />
-                  <span className="text-sm mt-2">Javascript</span>
-                </div>
-              </div>
-              {/* ReactJs icon */}
-              <div
-                className="Skills__SkillsCards show flex 
-                        relative left-0 dark:bg-[#464749] dark:text-white
-                        w-full h-full 
-                        p-4 items-center
-                        text-center"
-              >
-                <div className="flex flex-col items-center w-full ">
-                  <img
-                    src={react}
-                    alt="reactjs icon"
-                    className="w-[4rem] h-[4rem]"
-                  />
-                  <span className="text-sm mt-2">React.js</span>
-                </div>
-              </div>
-              {/* Tailwind icon */}
-              <div
-                className="Skills__SkillsCards show flex 
-                        relative left-0 dark:bg-[#464749] dark:text-white
-                        w-full h-full 
-                        p-4 items-center
-                        text-center"
-              >
-                <div className="flex flex-col items-center w-full justify-center">
-                  <img
-                    src={tailwindcss}
-                    alt="tailwind icon"
-                    className="w-[4rem] h-[4rem]"
-                  />
-                  <span className="text-sm mt-2">Tailwind</span>
-                </div>
-              </div>
-              {/* Python icon */}
-              <div
-                className="Skills__SkillsCards show flex 
-                            relative left-0 dark:bg-[#464749] dark:text-white
-                            w-full h-full 
-                            p-4 items-center
-                            text-center"
-              >
-                <div className="flex flex-col items-center w-full">
-                  <img
-                    src={python}
-                    alt="Python icon"
-                    className="w-[4rem] h-[4rem]"
-                  />
-                  <span className="text-sm mt-2">Python</span>
-                </div>
-              </div>
-              {/* sql icon */}
-              <div
-                className="Skills__SkillsCards show flex 
-                            relative left-0 dark:bg-[#464749] dark:text-white
-                            w-full h-full 
-                            p-4 items-center
-                            text-center"
-              >
-                <div className="flex flex-col items-center w-full">
-                  <img src={sql} alt="SQL icon" className="w-[4rem] h-[4rem]" />
-                  <span className="text-sm mt-2">MySQL</span>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>
