@@ -1,6 +1,7 @@
 import theband from "../../assets/img/theband.png";
 import food from "../../assets/img/food.png";
 import nike from "../../assets/img/nike.png";
+import helendo from "../../assets/img/helendo.png";
 import "./projects.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../fadeIn";
@@ -134,7 +135,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          {/* The band */}
+          {/* Helendo */}
           <div
             className="recent__project-card project__slide-up my-4
             flex 
@@ -156,20 +157,21 @@ const Projects = () => {
             "
           >
             <img
-              src={theband}
+              src={helendo}
               alt="Food order website"
               className="w-full rounded-t-lg md:h-[22rem]"
             />
             <div className="flex flex-col justify-between dark:text-white">
               <div className="px-5 pt-3 md:text-left">
-                <div className="text-xl font-semibold">The band</div>
+                <div className="text-xl font-semibold">E-commerce Shop</div>
                 <div className="text-zinc-500 pt-4 dark:text-white">
-                  A website when i studied how to build website with HTML, CSS.
+                  An online shop, i created to learn more about ReactJS, Redux,
+                  TailwindCSS
                 </div>
               </div>
               <div className="flex flex-row items-center justify-center mt-8 md:justify-start">
                 <a
-                  href="https://github.com/huynth1801/theband"
+                  href="https://github.com/huynth1801/Shop-clone-react"
                   target="_blank"
                   className="btn__link py-2 px-4 mx-4"
                 >
@@ -178,7 +180,7 @@ const Projects = () => {
                   </button>
                 </a>
                 <a
-                  href="https://huynth1801.github.io/theband/"
+                  href="https://helendoshop.netlify.app/home"
                   target="_blank"
                   className="btn__link py-2 px-4"
                 >
