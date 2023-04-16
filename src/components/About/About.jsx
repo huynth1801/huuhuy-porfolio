@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../fadeIn";
-import resume from "./../../assets/resume/myresume.doc";
+import resume from "./../../assets/resume/CV_NguyenThaiHuuHuy_SoftwareEngineer.docx";
 
 const About = () => {
   const [state] = useState({
@@ -79,7 +79,7 @@ const About = () => {
         </p>
       </motion.div>
       <div className="py-4">
-        <a href={resume} download="myresume">
+        <a href={resume} download="CV_NguyenThaiHuuHuy_SoftwareEngineer">
           <button
             className="transition ease-in-out delay-150 bg-red-500  my-4
             rounded-full py-2 px-6 text-white font-semibold dark:text-black
