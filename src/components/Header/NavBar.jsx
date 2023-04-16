@@ -13,26 +13,26 @@ const NavBar = () => {
   return (
     <header
       class="sticky top-0 z-10 bg-gradient-to-r
-                 from-[#6a82fb] to-[#fc5c7d] text-white
-                 dark:from-violet-600 dark:to-pink-600 dark:text-black"
+                 from-[#6a82fb] to-[#fc5c7d] 
+                 dark:from-violet-600 dark:to-pink-600 "
     >
       <section class="mx-auto flex max-w-4xl items-center justify-between p-8 md:p-6">
         <h1 class="text-3xl font-medium flex flex-row text-center items-center">
           <a href="#home" className="mr-2">
             HUY NGUYEN
           </a>
-          {isDarkMode ? (
+          {!isDarkMode ? (
             <FaMoon
-              size={"30px"}
+              size={"40px"}
               color="e9c46a"
-              className="cursor-pointer"
+              className="cursor-pointer rounded-full p-2 shadow-inner shadow-yellow-300"
               onClick={() => toggleDarkMode(!isDarkMode)}
             />
           ) : (
             <BsSunFill
-              size={"30px"}
+              size={"40px"}
               color="e9c46a"
-              className="cursor-pointer"
+              className="cursor-pointer rounded-full p-2 shadow-inner shadow-orange-300"
               onClick={() => toggleDarkMode(!isDarkMode)}
             />
           )}
@@ -42,7 +42,7 @@ const NavBar = () => {
           {toggle ? (
             <button
               id="hamburger-button"
-              class="toggle-btn relative h-8 w-8 cursor-pointer text-3xl md:hidden dark:text-black"
+              class="toggle-btn relative h-8 w-8 cursor-pointer text-3xl md:hidden dark:text-white text-black"
               onClick={handleMenu}
             >
               <div
@@ -81,33 +81,21 @@ const NavBar = () => {
             </button>
           )}
           <nav
-            class="hidden space-x-8 text-xl md:block dark:text-black"
+            class="hidden space-x-8 text-xl md:block text-black dark:text-white"
             aria-label="main"
           >
-            <a
-              href="#about"
-              class="md: hovers hover:text-[#3dc3f0] dark:text-black"
-            >
+            <a href="#about" class="md: hovers hover:text-[#3dc3f0] ">
               About
             </a>
-            <a
-              href="#skills"
-              class="md: hovers hover:text-[#3dc3f0] dark:text-black"
-            >
+            <a href="#skills" class="md: hovers hover:text-[#3dc3f0]">
               Skills
             </a>
 
-            <a
-              href="#projects"
-              class="md: hovers hover:text-[#3dc3f0] dark:text-black"
-            >
+            <a href="#projects" class="md: hovers hover:text-[#3dc3f0] ">
               Projects
             </a>
 
-            <a
-              href="#contact"
-              class="md: hovers hover:text-[#3dc3f0] dark:text-black"
-            >
+            <a href="#contact" class="md: hovers hover:text-[#3dc3f0]">
               Contact
             </a>
           </nav>
@@ -129,7 +117,7 @@ const NavBar = () => {
           >
             <a
               href="#about"
-              class="w-full py-6 text-center hover:bg-neutral-300"
+              class="w-full py-6 text-center hover:bg-neutral-300 "
             >
               About
             </a>
