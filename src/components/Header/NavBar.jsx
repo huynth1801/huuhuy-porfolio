@@ -18,7 +18,7 @@ const NavBar = () => {
     >
       <section class="mx-auto flex max-w-4xl items-center justify-between p-8 md:p-6">
         <h1 class="text-3xl font-medium flex flex-row text-center items-center">
-          <a href="#home" className="mr-2">
+          <a href="#home" className="mr-2 text-black dark:text-white">
             HUY NGUYEN
           </a>
           {!isDarkMode ? (
@@ -47,34 +47,34 @@ const NavBar = () => {
             >
               <div
                 class="absolute top-4 -mt-0.5 
-              h-1 w-8 rounded bg-white 
+              h-1 w-8 rounded bg-black
               transition-all duration-500 
               before:absolute before:h-1 before:w-8 
               before:-translate-x-4 before:-translate-y-3 
-              before:rounded before:bg-white dark:before:bg-black
+              before:rounded before:bg-black dark:before:bg-white
               before:transition-all before:duration-500 
               before:content-[''] after:absolute after:h-1 
               after:w-8 after:-translate-x-4 after:translate-y-3 
-              after:rounded after:bg-white after:transition-all dark:after:bg-black
+              after:rounded after:bg-black after:transition-all dark:after:bg-white
               after:duration-500 after:content-['']"
               ></div>
             </button>
           ) : (
             <button
               id="hamburger-button"
-              class="relative h-8 w-8 cursor-pointer text-3xl md:hidden"
+              class="relative h-8 w-8 cursor-pointer text-3xl md:hidden text-black dark:text-white"
               onClick={handleMenu}
             >
               <div
                 class="absolute top-4 -mt-0.5 
-              h-1 w-8 rounded bg-white dark:bg-black
+              h-1 w-8 rounded bg-black dark:bg-white
               transition-all duration-500 
               before:absolute before:h-1 before:w-8 
               before:-translate-x-4 before:-translate-y-3 
-              before:rounded before:bg-white before:transition-all dark:before:bg-black
+              before:rounded before:bg-black before:transition-all dark:before:bg-white
               before:duration-500 before:content-[''] 
               after:absolute after:h-1 after:w-8 after:-translate-x-4 
-              after:translate-y-3 after:rounded after:bg-white dark:after:bg-black
+              after:translate-y-3 after:rounded after:bg-black dark:after:bg-white
               after:transition-all after:duration-500 
               after:content-['']"
               ></div>
