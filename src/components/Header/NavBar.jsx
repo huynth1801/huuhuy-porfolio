@@ -16,7 +16,7 @@ const NavBar = () => {
                  from-[#6a82fb] to-[#fc5c7d] 
                  dark:from-violet-600 dark:to-pink-600 "
     >
-      <section class="mx-auto flex max-w-4xl items-center justify-between p-8 md:p-6">
+      <section class="flex max-w-6xl mx-auto items-center justify-between p-8 md:p-6 ">
         <h1 class="text-3xl font-medium flex flex-row text-center items-center">
           <a href="#home" className="mr-2 text-black dark:text-white">
             HUY NGUYEN
