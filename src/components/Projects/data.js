@@ -26,7 +26,8 @@ const data = [
     id: "03",
     projectName: "React Movie App",
     imgPath: reactMovie,
-    prjDesc: "React Movie App with Dark Mode using ReactJS, TailwindCSS, SCSS",
+    prjDesc:
+      "React Movie App with Dark Mode using ReactJS, TailwindCSS, SCSS and using Axios to fetch data from TMDB API",
     githubLink:
       "https://github.com/huynth1801/react-tailwind-movieapp/tree/master",
     liveDemo: "https://sunfix.netlify.app/",
