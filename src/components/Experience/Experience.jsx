@@ -1,13 +1,12 @@
-import "./education.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../fadeIn";
 
-const Education = () => {
+const Experience = () => {
   return (
     <section
-      className="bg-gradient-to-b from-[#F9FAFB] to-[#F7D0E6] 
-                        dark:from-[#343f4a] dark:to-[#343f4a]
-                        py-4 md:py-8"
+      className="bg-gradient-to-b from-[#F9FAFB] to-[#F9FAFB]
+                    dark:from-[#172029] dark:to-[#343f4a]
+                    py-4 md:py-8"
     >
       <motion.div
         variants={fadeIn("down", 0.1)}
@@ -18,18 +17,18 @@ const Education = () => {
       >
         <div className="text-center pb-12">
           <span className="text-5xl font-bold text-blue-500 font-dg">
-            EDUCATION
+            EXPERIENCE
           </span>
         </div>
         <div className="education my-8 pb-12 dark:bg-[#464749]">
           <div className="education__time pl-6 pt-10 dark:text-white">
             <span className="time font-light text-zinc-400 dark:text-red-300">
-              2023 - now
+              5/2023 - 8/2023
             </span>
             <div className="text-[20px] font-semibold mb-4">
-              Banchelor's Degree
+              Onechain game studio
             </div>
-            <div className="">Software Engineering - UEH University</div>
+            <div className="">Tech: Typescript</div>
           </div>
         </div>
       </motion.div>
@@ -37,4 +36,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Experience;

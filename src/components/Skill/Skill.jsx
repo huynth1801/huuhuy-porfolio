@@ -5,11 +5,11 @@ import tailwindcss from "../../assets/img/tailwindcss.svg";
 import javascript from "../../assets/img/javascript.svg";
 import python from "../../assets/img/python.png";
 import mysql from "../../assets/img/mysql.png";
+import typescript from "../../assets/img/icons8-typescript-144.png";
 import "./skill.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../fadeIn";
 import BackToTopButton from "../BackToTopButton.jsx";
-import { useEffect, useState } from "react";
 
 const dataIcon = [
   {
@@ -46,6 +46,11 @@ const dataIcon = [
     id: "07",
     imgUrl: mysql,
     desc: "MySQL",
+  },
+  {
+    id: "08",
+    imgUrl: typescript,
+    desc: "Typescript",
   },
 ];
 
