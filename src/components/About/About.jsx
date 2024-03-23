@@ -1,4 +1,4 @@
-import avatar from "../../assets/img/avatar.jpeg";
+import avatar from "../../assets/img/newavatar.jpg";
 import Typewriter from "typewriter-effect";
 import { useState } from "react";
 import { motion } from "framer-motion";
