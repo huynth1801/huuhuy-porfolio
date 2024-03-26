@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../fadeIn";
-import resume from "./../../assets/resume/CV_NguyenThaiHuuHuy_SoftwareEngineer.docx";
+import resume from "./../../assets/resume/NguyenThaiHuuHuy_CV_SoftwareEngineer.pdf";
 
 const About = () => {
   const [state] = useState({
@@ -70,16 +70,20 @@ const About = () => {
         className="mx-4 my-2 md:mt-12 md:mx-8"
       >
         <p className="text-left md:text-[18px] dark:text-white">
-          I am a hardworking and ambitious individual with a great passion for
-          programming. I am currently studying website development. I have
-          communication skils, self-study ability, like to study new
-          technologies. I am eager to be challenged in order to grow and futher
-          improve my front-end skils. I am looking for an internship as
-          front-end developer
+          As a passionate and inventive aspiring Front-end Developer, I am
+          seeking an internship opportunity where I can cultivate my skills in
+          HTML, CSS, JavaScript, and modern frameworks like React.js. Keen to
+          leverage my knowledge from academic projects and personal initiatives,
+          I aim to contribute to creating engaging user experiences while
+          gaining hands-on experience in a dynamic team environment. I am eager
+          to learn from industry experts and contribute fresh ideas, bringing a
+          strong commitment to collaboration and innovation in the process. My
+          goal is to grow professionally and evolve into a role where I can help
+          shape intuitive, beautiful, and user-centric web applications.
         </p>
       </motion.div>
       <div className="py-4">
-        <a href={resume} download="CV_NguyenThaiHuuHuy_SoftwareEngineer">
+        <a href={resume} download="NguyenThaiHuuHuy_CV_SoftwareEngineer">
           <button
             className="transition ease-in-out delay-150 bg-red-500  my-4
             rounded-full py-2 px-6 text-white font-semibold dark:text-black
