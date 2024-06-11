@@ -12,13 +12,15 @@ const NavBar = () => {
   };
   return (
     <header
-      class="sticky top-0 z-10 bg-gradient-to-r
-                 from-[#6a82fb] to-[#fc5c7d] 
-                 dark:from-violet-600 dark:to-pink-600 "
+      class="sticky top-0 z-10 bg-white
+                 dark:bg-zinc-700 shadow-md "
     >
       <section class="flex max-w-6xl mx-auto items-center justify-between p-8 md:p-6 ">
         <h1 class="text-3xl font-medium flex flex-row text-center items-center">
-          <a href="#home" className="mr-2 text-black dark:text-white">
+          <a
+            href="#home"
+            className="mr-2 text-black dark:text-white"
+          >
             HUY NGUYEN
           </a>
           {!isDarkMode ? (
@@ -84,18 +86,30 @@ const NavBar = () => {
             class="hidden space-x-8 text-xl md:block text-black dark:text-white"
             aria-label="main"
           >
-            <a href="#about" class="md: hovers hover:text-[#3dc3f0] ">
+            <a
+              href="#about"
+              className="md: hovers hover:text-[#3dc3f0] active:text-[#3dc3f0] focus:text-[#3dc3f0] "
+            >
               About
             </a>
-            <a href="#skills" class="md: hovers hover:text-[#3dc3f0]">
+            <a
+              href="#skills"
+              class="md: hovers hover:text-[#3dc3f0]"
+            >
               Skills
             </a>
 
-            <a href="#projects" class="md: hovers hover:text-[#3dc3f0] ">
+            <a
+              href="#projects"
+              class="md: hovers hover:text-[#3dc3f0] "
+            >
               Projects
             </a>
 
-            <a href="#contact" class="md: hovers hover:text-[#3dc3f0]">
+            <a
+              href="#contact"
+              class="md: hovers hover:text-[#3dc3f0]"
+            >
               Contact
             </a>
           </nav>

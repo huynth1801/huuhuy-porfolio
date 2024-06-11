@@ -6,6 +6,8 @@ import javascript from "../../assets/img/javascript.svg";
 import python from "../../assets/img/python.png";
 import mysql from "../../assets/img/mysql.png";
 import typescript from "../../assets/img/icons8-typescript-144.png";
+import mongodb from "../../assets/img/mongodb.svg";
+import nextjs from "../../assets/img/nextjs.svg";
 import "./skill.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../fadeIn";
@@ -52,13 +54,23 @@ const dataIcon = [
     imgUrl: typescript,
     desc: "Typescript",
   },
+  {
+    id: "09",
+    imgUrl: mongodb,
+    desc: "MongoDB",
+  },
+  {
+    id: "10",
+    imgUrl: nextjs,
+    desc: "Next.js",
+  },
 ];
 
 const Skill = () => {
   return (
     <div
-      className="bg-gradient-to-b from-slate-100 to-[#F9FAFB] 
-                    dark:from-pink-700 dark:to-[#172029]
+      className="bg-gradient-to-b bg-white
+                    dark:bg-zinc-600
                     min-h-screen flex items-center 
                     justify-center px-8 md:px-16"
     >
@@ -118,7 +130,9 @@ const Skill = () => {
                       alt="html icon"
                       className="w-[4rem] h-[4rem]"
                     />
-                    <span className="text-sm mt-2">{item.desc}</span>
+                    <span className="text-sm mt-2">
+                      {item.desc}
+                    </span>
                   </div>
                 </div>
               ))}

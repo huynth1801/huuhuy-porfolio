@@ -7,8 +7,8 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="bg-gradient-to-b from-[#F7D0E6] to-white pb-8
-                dark:from-[#343f4a] dark:to-[#172029]"
+      className="bg-gradient-to-b pb-8
+                dark:bg-zinc-600"
     >
       <motion.div
         variants={fadeIn("right", 0.1)}

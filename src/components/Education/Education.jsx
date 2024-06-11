@@ -5,8 +5,8 @@ import { fadeIn } from "../fadeIn";
 const Education = () => {
   return (
     <section
-      className="bg-gradient-to-b from-[#F9FAFB] to-[#F7D0E6] 
-                        dark:from-[#343f4a] dark:to-[#343f4a]
+      className="bg-gradient-to-b 
+                        dark:bg-zinc-600
                         py-4 md:py-8"
     >
       <motion.div
@@ -29,7 +29,9 @@ const Education = () => {
             <div className="text-[20px] font-semibold mb-4">
               Banchelor's Degree
             </div>
-            <div className="">Software Engineering - UEH University</div>
+            <div className="">
+              Software Engineering - UEH University
+            </div>
           </div>
         </div>
       </motion.div>

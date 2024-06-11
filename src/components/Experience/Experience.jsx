@@ -4,8 +4,8 @@ import { fadeIn } from "../fadeIn";
 const Experience = () => {
   return (
     <section
-      className="bg-gradient-to-b from-[#F9FAFB] to-[#F9FAFB]
-                    dark:from-[#172029] dark:to-[#343f4a]
+      className="bg-gradient-to-b 
+                    dark:bg-zinc-600
                     py-4 md:py-8"
     >
       <motion.div

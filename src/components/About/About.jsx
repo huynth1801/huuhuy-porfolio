@@ -1,4 +1,4 @@
-import avatar from "../../assets/img/avatar.jpeg";
+import avatar from "../../assets/img/myavatar.JPG";
 import Typewriter from "typewriter-effect";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -15,7 +15,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-gradient-to-b from-[#F7D0E6] to-slate-100 dark:from-purple-700 dark:to-pink-700
+      className="bg-white dark:bg-zinc-600
       justify-center items-center text-center opacity-190"
     >
       <motion.div
@@ -39,7 +39,9 @@ const About = () => {
             <motion.div className="title text-5xl font-bold my-2">
               {state.title}
             </motion.div>
-            <div className="titleTwo text-[18px]">{state.titleTwo}</div>
+            <div className="titleTwo text-[18px]">
+              {state.titleTwo}
+            </div>
           </h2>
           <div className="text text-[30px] p-2 md:px-0">
             <Typewriter
@@ -70,19 +72,24 @@ const About = () => {
         className="mx-4 my-2 md:mt-12 md:mx-8"
       >
         <p className="text-left md:text-[18px] dark:text-white">
-          I am a hardworking and ambitious individual with a great passion for
-          programming. I am currently studying website development. I have
-          communication skils, self-study ability, like to study new
-          technologies. I am eager to be challenged in order to grow and futher
-          improve my front-end skils. I am looking for an internship as
-          front-end developer
+          I am a hardworking and ambitious individual with a
+          great passion for programming. I am currently
+          studying website development. I have communication
+          skils, self-study ability, like to study new
+          technologies. I am eager to be challenged in order
+          to grow and futher improve my front-end skils. I
+          am looking for an internship as front-end
+          developer
         </p>
       </motion.div>
       <div className="py-4">
-        <a href={resume} download="CV_NguyenThaiHuuHuy_SoftwareEngineer">
+        <a
+          href={resume}
+          download="CV_NguyenThaiHuuHuy_SoftwareEngineer"
+        >
           <button
             className="transition ease-in-out delay-150 bg-red-500  my-4
-            rounded-full py-2 px-6 text-white font-semibold dark:text-black
+            rounded-full py-2 px-6 text-white font-semibold
             hover:-translate-y-1 hover:scale-110
           hover:bg-red-900 duration-300"
           >

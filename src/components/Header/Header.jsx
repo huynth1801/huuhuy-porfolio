@@ -12,14 +12,18 @@ const Header = () => {
     <header>
       <section
         className="relative flex items-center px-4 py-6 z-10
-      bg-gradient-to-b from-purple-500 to-pink-500"
+      bg-white"
       >
         {/* Name */}
         <div className="flex items-center">
           <div className="text-2xl font-bold text-cyan-400 mr-2">
             HUY NGUYEN
           </div>
-          <BsSunFill size={"24px"} color="e9c46a" className="cursor-pointer" />
+          <BsSunFill
+            size={"24px"}
+            color="e9c46a"
+            className="cursor-pointer"
+          />
         </div>
         {/* Hamburger menu */}
         <ul className=" ml-auto text-16">
